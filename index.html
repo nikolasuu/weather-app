@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sprawdź pogodę</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sprawdź pogodę</h1>
+      <div class="search-container">
+        <input
+          type="text"
+          id="city"
+          class="search-input"
+          placeholder="Wpisz miejscowość"
+        />
+        <button class="search-button" onclick="getWeather()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+          >
+            <path
+              d="M10 2a8 8 0 016.32 12.906l5.387 5.387-1.415 1.415-5.387-5.387A8 8 0 1110 2zm0 2a6 6 0 100 12 6 6 0 000-12z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div id="loading">
+        <embed type="image/svg+xml" src="images/loading.svg" />
+      </div>
+      <div id="error"></div>
+      <div id="weather">
+        <h2 id="city-name"></h2>
+        <div id="temperature">
+          <img id="temperature-image" src="" alt="" />
+          <p id="temperature-value"></p>
+        </div>
+        <p id="feels-like"></p>
+        <p id="humidity"></p>
+        <p id="description"></p>
+      </div>
+    </div>
+    <div id="copyright">
+      <a
+        href="https://github.com/nikolasuu"
+        title="https://github.com/nikolasuu"
+        >Created by Nikolas Jadziński</a
+      >
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

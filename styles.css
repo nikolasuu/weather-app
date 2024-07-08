@@ -1,0 +1,109 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  overflow: hidden;
+  background-image: url("images/bgimage.svg");
+  background-repeat: repeat;
+  animation: scrollBackground 6s linear infinite;
+}
+@media (max-width: 480px) {
+  body {
+    animation: scrollBackground 4s linear infinite;
+  }
+}
+@keyframes scrollBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -100px 0;
+  }
+}
+body ::first-letter {
+  text-transform: uppercase;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(0deg, rgba(5, 40, 108, 0.8) 0%, rgba(7, 56, 152, 0.7) 110%);
+  padding: 20px 0px;
+  border-radius: 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+.container .search-container {
+  position: relative;
+  width: 300px;
+  margin-bottom: 36px;
+}
+@media (max-width: 480px) {
+  .container .search-container {
+    width: 80%;
+  }
+}
+.container .search-container .search-input {
+  width: 80%;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+.container .search-container .search-button {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.container .search-container .search-button svg {
+  fill: rgba(0, 0, 0, 0.4);
+}
+.container .search-container .search-button svg:hover {
+  fill: #000;
+}
+.container #error {
+  color: #e24e42;
+}
+.container #weather h2 {
+  margin: 0 0 10px 0;
+  font-size: 32px;
+}
+.container #weather #temperature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container #weather #temperature #temperature-value {
+  font-size: 36px;
+}
+.container #weather #feels-like {
+  color: #fbc02d;
+}
+
+#copyright {
+  position: absolute;
+  margin-top: 10px;
+  bottom: 15px;
+}
+#copyright a {
+  cursor: pointer;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=styles.css.map */

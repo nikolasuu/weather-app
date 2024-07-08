@@ -1,0 +1,12 @@
+{
+  "name": "web24",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass styles.scss styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
